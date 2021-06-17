@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UI Library</title>
+  <style>
+    body{ font-size: 1.5em; font-family: arial; color: #555; }
+    .container{ margin: 40px; margin-top: 60px; }
+    button{ 
+      width: 200px; 
+      background: #eee; 
+      padding: 10px; 
+      margin: 20px auto;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- tooltip -->
+    <p>Guten Tag, wie geht es <span class="tooltip" data-message="尊称：您">Ihnen</span>?</p>
+    <h2>Deutsch</h2>
+    <!-- dropdowns -->
+    <div class="dropdown">
+      <div class="trigger">Thank you</div>
+      <div class="content">
+        <p>Danke</p>
+        <p>Dankeschön</p>
+        <p>Vielen Dank</p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="trigger">Goodbye</div>
+      <div class="content">
+        <p>Auf Wiedersehen.</p>
+        <p>Tschüs</p>
+        <p>Tschau</p>
+      </div>
+    </div>
+    <h2>More information</h2>
+    <!-- tabs -->
+    <div class="tabs">
+      <ul>
+        <li class="trigger active" data-target="#about">About</li>
+        <li class="trigger" data-target="#delivery">Delivery info</li>
+        <li class="trigger" data-target="#returns">Returns info</li>
+      </ul>
+      <div id="about" class="content active">
+        <h3>about</h3>
+        <p>Ich heiße Gong Meina. Meine Telefonnummer ist (+86) 17722692850.</p>
+      </div>
+      <div id="delivery" class="content">
+        <h3>delivery</h3>
+        <p>In der Mörikestrasse 5.</p>
+      </div>
+      <div id="returns" class="content">
+        <h3>returns</h3>
+        <p>Dankeschön</p>
+      </div>
+    </div>
+    <div>
+      <button class="snackbar-trigger">click me</button>
+    </div>
+  </div>
+
+  <script src="assets/bundle.js"></script>
+</body>
+</html>
